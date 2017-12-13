@@ -8,7 +8,7 @@ RUN apt-get update  && \
     curl -s https://artifacts.elastic.co/downloads/kibana/kibana-${KIBANA_VERSION}.tar.gz | tar zx -C /opt && \
     rm -rf /opt/kibana-${KIBANA_VERSION}/node && \
     mkdir -p /opt/kibana-${KIBANA_VERSION}/node/bin && \
-    ln -sf /usr/bin/node /opt/kibana-${KIBANA_VERSION}/node/bin/node && \
+    ln -sf /usr/bin/node /opt/kibana-${KIBANA_VERSION}/node/bin/node \
 
 ADD ./run.sh /run.sh
 
