@@ -1,5 +1,5 @@
 
-FROM ubuntu 16.04
+FROM ubuntu:16.04
 
 ENV KIBANA_VERSION 6.0.1-linux-x86_64
 
